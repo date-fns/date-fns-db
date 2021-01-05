@@ -1,0 +1,24 @@
+{
+  "name": "date-fns-db",
+  "version": "1.0.0",
+  "description": "Scripts for uploading date-fns docs to firestore",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "repository": "https://github.com/leshakoss/date-fns-db.git",
+  "author": "Lesha Koss <lesha@hey.com>",
+  "license": "MIT",
+  "scripts": {
+    "migrate": "ts-node scripts/migrate.ts",
+    "prepublish": "tsc"
+  },
+  "devDependencies": {
+    "ts-node": "^9.1.1",
+    "typescript": "^4.1.3"
+  },
+  "dependencies": {
+    "firebase": "^8.2.1",
+    "firebase-admin": "^9.4.2",
+    "json-bond": "^0.1.0",
+    "typesaurus": "^7.1.0"
+  }
+}
