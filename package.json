@@ -1,6 +1,6 @@
 {
-  "name": "date-fns-db",
-  "version": "1.0.0",
+  "name": "@date-fns/date-fns-db",
+  "version": "0.0.1",
   "description": "Scripts for uploading date-fns docs to firestore",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
