@@ -2,6 +2,8 @@ import { JSONBond } from 'json-bond'
 import { collection } from 'typesaurus'
 import { MigratedDocFunction } from './migratedDoc'
 
+export const PACKAGE_NAME = 'date-fns'
+
 export const db = {
   packages: collection<Package>('packages'),
   versions: collection<Version>('versions'),
