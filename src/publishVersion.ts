@@ -5,7 +5,7 @@ import { batch, id, query, where, set, update } from 'typesaurus'
 import { MigratedDocFunction } from './migratedDoc'
 import db, { Version, VersionPreview, Page, PagePreview } from './db'
 
-const PACKAGE_NAME = 'date-fns'
+export const PACKAGE_NAME = 'date-fns'
 
 interface MarkdownDoc {
   type: 'markdown'
