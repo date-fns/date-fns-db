@@ -1,5 +1,5 @@
 import * as admin from 'firebase-admin'
-import db, { VersionPreview, Version, PagePreview, Page } from '../src/db'
+import { db, VersionPreview, Version, PagePreview, Page } from '../src/db'
 import { stringify } from 'json-bond'
 import 'firebase/firestore'
 import { batch, id, add } from 'typesaurus'

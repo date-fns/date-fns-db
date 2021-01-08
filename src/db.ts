@@ -1,13 +1,12 @@
 import { JSONBond } from 'json-bond'
-import { collection, subcollection } from 'typesaurus'
+import { collection } from 'typesaurus'
 import { MigratedDocFunction } from './migratedDoc'
 
-const db = {
+export const db = {
   packages: collection<Package>('packages'),
   versions: collection<Version>('versions'),
   pages: collection<Page>('pages'),
 }
-export default db
 
 export type Package = {
   name: string

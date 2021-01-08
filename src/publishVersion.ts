@@ -1,9 +1,9 @@
 import * as admin from 'firebase-admin'
 import 'firebase/firestore'
 import { stringify } from 'json-bond'
-import { batch, id, query, where, set, update } from 'typesaurus'
+import { batch, id, query, where } from 'typesaurus'
 import { MigratedDocFunction } from './migratedDoc'
-import db, { Version, VersionPreview, Page, PagePreview } from './db'
+import { db, Version, VersionPreview, Page, PagePreview } from './db'
 
 export const PACKAGE_NAME = 'date-fns'
 
