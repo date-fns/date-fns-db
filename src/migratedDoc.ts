@@ -7,8 +7,8 @@ export type MigratedDocTypedAttribute = {
   type: MigratedDocType
 }
 
-type MigratedDocException = MigratedDocTypedAttribute
-type MigratedDocReturn = MigratedDocTypedAttribute
+export type MigratedDocException = MigratedDocTypedAttribute
+export type MigratedDocReturn = MigratedDocTypedAttribute
 
 export type MigratedDocParam = MigratedDocTypedAttribute & {
   name: string
