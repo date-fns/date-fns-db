@@ -35,6 +35,7 @@ export type Version = {
   preRelease: boolean
   createdAt: number
   categories: string[]
+  submodules: Submodule[]
   pages: PagePreview[]
 }
 

@@ -35,7 +35,7 @@ export type MigratedDocFunction = {
   content: {
     category: string
     description: string
-    examples: string[]
+    examples?: string | string[]
     exceptions: MigratedDocException[]
     id: string
     kind: string
