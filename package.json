@@ -1,6 +1,6 @@
 {
   "name": "@date-fns/date-fns-db",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "TypeScript types for date-fns Firestore database",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",

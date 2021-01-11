@@ -10,7 +10,13 @@ export const db = {
   pages: collection<Page>('pages'),
 }
 
-export type Submodule = 'default' | 'fp'
+export const enum Submodule {
+  Default = 'default',
+  FP = 'fp',
+}
+
+export const SUBMODULES = [Submodule.Default, Submodule.FP]
+export const DEFAULT_SUBMODULE = Submodule.Default
 
 export type Package = {
   name: string
