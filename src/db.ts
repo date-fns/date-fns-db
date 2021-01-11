@@ -10,6 +10,8 @@ export const db = {
   pages: collection<Page>('pages'),
 }
 
+export type Submodule = 'default' | 'fp'
+
 export type Package = {
   name: string
   versions: VersionPreview[]
@@ -31,6 +33,7 @@ export type Version = {
 }
 
 export type PagePreview = {
+  submodules: Submodule[]
   slug: string
   category: string
   title: string
@@ -40,6 +43,7 @@ export type PagePreview = {
 export type Page = {
   package: string
   version: string
+  submodules: Submodule[]
   slug: string
   category: string
   title: string
@@ -50,8 +54,6 @@ export type MigratedDocPage = {
   type: 'migrated'
   name: string
   doc: JSONBond<MigratedDocFunction>
-  defaultSubmodulePageSlug?: string
-  fpSubmodulePageSlug?: string
 }
 
 export type MarkdownPage = {
