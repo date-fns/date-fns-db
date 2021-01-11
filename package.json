@@ -8,7 +8,6 @@
   "author": "Lesha Koss <lesha@hey.com>",
   "license": "MIT",
   "scripts": {
-    "migrate": "ts-node scripts/migrate.ts",
     "prepublish": "tsc"
   },
   "devDependencies": {
