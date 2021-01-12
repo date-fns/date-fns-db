@@ -27,6 +27,7 @@ export type VersionPreview = {
   version: string
   preRelease: boolean
   createdAt: number
+  submodules: Submodule[]
 }
 
 export type Version = {
