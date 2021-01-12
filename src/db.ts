@@ -1,6 +1,6 @@
 import { JSONBond } from 'json-bond'
 import { collection } from 'typesaurus'
-import { MigratedDocFunction } from './migratedDoc'
+import { JSDocFunction } from './jsDoc'
 
 export const PACKAGE_NAME = 'date-fns'
 
@@ -55,12 +55,12 @@ export type Page = {
   category: string
   title: string
   summary: string
-} & (MigratedDocPage | MarkdownPage)
+} & (JSDocPage | MarkdownPage)
 
-export type MigratedDocPage = {
-  type: 'migrated'
+export type JSDocPage = {
+  type: 'jsdoc'
   name: string
-  doc: JSONBond<MigratedDocFunction>
+  doc: JSONBond<JSDocFunction>
 }
 
 export type MarkdownPage = {

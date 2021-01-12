@@ -1,24 +1,24 @@
-export type MigratedDocType = {
+export type JSDocType = {
   names: string[]
 }
 
-export type MigratedDocTypedAttribute = {
+export type JSDocTypedAttribute = {
   description: string
-  type: MigratedDocType
+  type: JSDocType
 }
 
-export type MigratedDocException = MigratedDocTypedAttribute
-export type MigratedDocReturn = MigratedDocTypedAttribute
+export type JSDocException = JSDocTypedAttribute
+export type JSDocReturn = JSDocTypedAttribute
 
-export type MigratedDocParam = MigratedDocTypedAttribute & {
+export type JSDocParam = JSDocTypedAttribute & {
   name: string
   optional?: boolean
   defaultvalue?: string
   variable?: boolean
-  props?: MigratedDocParam[]
+  props?: JSDocParam[]
 }
 
-export type MigratedDocUsage = {
+export type JSDocUsage = {
   [usageTab: string]: {
     code: string
     title: string
@@ -29,14 +29,14 @@ export type MigratedDocUsage = {
 /**
  * Documentation page migrated from old date-fns.org realtime database
  */
-export type MigratedDocFunction = {
-  args?: MigratedDocParam[]
+export type JSDocFunction = {
+  args?: JSDocParam[]
   category: string
   content: {
     category: string
     description: string
     examples?: string | string[]
-    exceptions: MigratedDocException[]
+    exceptions: JSDocException[]
     id: string
     kind: string
     longname: string
@@ -47,12 +47,12 @@ export type MigratedDocFunction = {
     }
     name: string
     order: number
-    properties?: MigratedDocParam[]
-    params?: MigratedDocParam[]
-    returns?: MigratedDocReturn[]
+    properties?: JSDocParam[]
+    params?: JSDocParam[]
+    returns?: JSDocReturn[]
     scope: string
     summary: string
-    type?: MigratedDocType
+    type?: JSDocType
   }
   description: string
   isFPFn?: boolean
@@ -66,6 +66,6 @@ export type MigratedDocFunction = {
   title: string
   type: 'jsdoc'
   urlId: string
-  usage?: MigratedDocUsage
+  usage?: JSDocUsage
   usageTabs?: string[]
 }
