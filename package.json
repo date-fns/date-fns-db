@@ -4,7 +4,7 @@
   "description": "TypeScript types for date-fns Firestore database",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
-  "repository": "https://github.com/leshakoss/date-fns-db.git",
+  "repository": "https://github.com/date-fns/date-fns-db.git",
   "author": "Lesha Koss <lesha@hey.com>",
   "license": "MIT",
   "scripts": {
